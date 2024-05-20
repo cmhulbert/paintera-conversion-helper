@@ -63,7 +63,7 @@ jobs:
       - name: Upload Installers
         uses: actions/upload-artifact@v4
         with:
-          name: Paintera-${{ matrix.os }}-${{ env.VERSION }}
+          name: PainteraConvert-${{ matrix.os }}-${{ env.VERSION }}
           path: |
             ${{ env.DMG_PATH }}
             ./target/installer-${{ matrix.os }}/*
